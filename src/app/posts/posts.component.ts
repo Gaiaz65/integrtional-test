@@ -6,8 +6,8 @@ import {PostsService} from './posts.service';
   selector: 'app-posts'
 })
 export class PostsComponent implements OnInit {
-  posts = []
-  message: string
+  posts!:any[]
+  message!: string
 
   constructor(private service: PostsService) {
   }
@@ -25,7 +25,7 @@ export class PostsComponent implements OnInit {
     }, err => this.message = err)
   }
 
-  delete(id) {
+  delete(id:any) {
     if (window.confirm('Are you sure?')) {
       this.service.remove(id).subscribe()
     }

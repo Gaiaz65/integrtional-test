@@ -6,7 +6,7 @@ describe('PostsComponent', () => {
   let service: PostsService
 
   beforeEach(() => {
-    service = new PostsService(null)
+    // service = new PostsService(null)
     component = new PostsComponent(service)
   })
 
