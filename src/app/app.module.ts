@@ -9,10 +9,11 @@ import { PostsComponent } from './posts/posts.component';
 import { RouterModule } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ColorDirective } from './directives/color.directive';
+import { UnitTestingComponent } from './unit-testing/unit-testing.component';
 
 
 @NgModule({
-  declarations: [AppComponent, CounterComponent, PostsComponent, RoutingComponent, NavbarComponent, ColorDirective],
+  declarations: [AppComponent, CounterComponent, PostsComponent, RoutingComponent, NavbarComponent, ColorDirective, UnitTestingComponent],
   imports: [
     BrowserModule,
     FormsModule,
