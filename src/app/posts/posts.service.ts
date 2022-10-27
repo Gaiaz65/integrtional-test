@@ -14,7 +14,6 @@ export class PostsService {
     return this.http.get<any[]>(``);
   }
 
-
   remove(id: number): Observable<any> {
     return this.http.delete<void>(`${id}`);
   }

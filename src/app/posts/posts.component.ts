@@ -6,7 +6,7 @@ import {PostsService} from './posts.service';
   selector: 'app-posts'
 })
 export class PostsComponent implements OnInit {
-  posts!:any[]
+  posts:any[] = []
   message!: string
 
   constructor(private service: PostsService) {
